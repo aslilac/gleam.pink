@@ -3,7 +3,7 @@
  */
 const versions = {
 	latest: "curl -fsSL https://gleam.pink/install.sh | sh",
-	rc: "curl -fsSL https://gleam.pink/install.sh | sh -s -- --version 0.34.0-rc1",
+	// rc: "curl -fsSL https://gleam.pink/install.sh | sh -s -- --version 0.34.0-rc1",
 	nightly: "curl -fsSL https://gleam.pink/install.sh | sh -s -- --version nightly",
 };
 
