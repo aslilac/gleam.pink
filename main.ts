@@ -31,6 +31,6 @@ Deno.serve((request) => {
 	}
 
 	return serveDir(request, {
-		urlRoot: "content/",
+		fsRoot: "content/",
 	});
 });
