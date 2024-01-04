@@ -1,12 +1,9 @@
-import { serve } from "https://deno.land/std@0.186.0/http/server.ts";
+import { serveDir, serveFile } from "std/http/file_server.ts";
 
-function redirect(location: string) {
-	return new Response(null, {
-		status: 302,
-		headers: {
-			location,
-		},
-	});
+class Redirect extends Response {
+	constructor(location: string) {
+		super(null, { status: 302, headers: { location } });
+	}
 }
 
 const redirects = new Map([
@@ -16,15 +13,24 @@ const redirects = new Map([
 	],
 ]);
 
-function router(request: Request) {
+Deno.serve((request) => {
 	const url = new URL(request.url);
-	const location = redirects.get(url.pathname);
 
-	if (!location) {
-		return redirect("https://gleam.run")
+	if (
+		url.pathname === "/install.sh" &&
+		request.headers.get("accept")?.includes("text/html")
+	) {
+		return new Redirect(
+			"https://github.com/gleam-community/gleam-install/tree/HEAD/install.sh",
+		);
 	}
 
-	return redirect(location);
-}
+	const location = redirects.get(url.pathname);
+	if (location) {
+		return new Redirect(location);
+	}
 
-serve(router);
+	return serveDir(request, {
+		urlRoot: "content/",
+	});
+});

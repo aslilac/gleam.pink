@@ -1,0 +1,94 @@
+:root {
+	--font-sans-serif: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
+		source-sans-pro, sans-serif;
+}
+
+* {
+	user-select: none;
+}
+
+body {
+	background-color: #ffe5fe;
+	background: linear-gradient(#ffe5fe, #ffd5fe);
+	font-family: var(--font-sans-serif);
+}
+
+a,
+a:visited {
+	/* color: #8f2f8e; */
+	color: #af68ae;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	color: #0008;
+}
+
+.bar {
+	display: flex;
+	align-items: center;
+	background: #fff5;
+	padding: 12px 30px;
+	padding-right: 12px;
+	border-radius: 22px;
+	border: 1px solid #0002;
+	gap: 12px;
+	box-shadow: 0 4px 12px #0001;
+	margin-bottom: 32px;
+}
+
+.command {
+	font-family: monospace;
+	font-size: 16px;
+	color: #000b;
+	padding-right: 12px;
+	user-select: all;
+}
+
+.version {
+	font-family: var(--font-sans-serif);
+	background-color: #fff3;
+	border-radius: 12px;
+	border: 1px solid #0002;
+	font-size: 16px;
+	padding: 8px;
+	box-shadow: 0 0 2px #0001;
+
+	transition: background-color 100ms, border 100ms, transform 100ms;
+}
+
+.version:hover {
+	background-color: #fff5;
+	border: 1px solid #0003;
+	transform: scale(1.02);
+}
+
+.copyButton {
+	background-color: #fff3;
+	border-radius: 12px;
+	border: 1px solid #0002;
+	padding: 3px;
+	box-shadow: 0 0 2px #0001;
+
+	transition: background-color 100ms, border 100ms, transform 100ms;
+}
+
+.copyButton:hover {
+	background-color: #fff5;
+	border: 1px solid #0003;
+	transform: scale(1.02);
+}
+
+.copyButton:active {
+	background-color: #fff5;
+	border: 1px solid #0003;
+	transform: none;
+}
+
+footer {
+	text-align: center;
+}
