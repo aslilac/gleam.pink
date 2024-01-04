@@ -1,0 +1,9 @@
+{
+	"fmt": {
+		"indentWidth": 2,
+		"useTabs": true
+	},
+	"imports": {
+		"std/": "https://deno.land/std@0.210.0/"
+	}
+}
