@@ -2,7 +2,7 @@ import { serveDir } from "std/http/file_server.ts";
 
 class Redirect extends Response {
 	constructor(location: string) {
-		super(null, { status: 302, headers: { location } });
+		super(null, { status: 302, headers: { location, vary: "accept" } });
 	}
 }
 
