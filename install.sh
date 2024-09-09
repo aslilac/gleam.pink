@@ -113,7 +113,7 @@ There is another binary in your PATH that conflicts with the binary we've instal
 
 This is likely because of an existing installation of Gleam. See our documentation for suggestions on how to resolve this.
 
-  https://github.com/gleam-community/gleam-install/blob/main/docs/PATH.md#path-conflicts
+  https://github.com/aslilac/gleam.pink/blob/main/docs/PATH.md#path-conflicts
 
 EOF
 }
