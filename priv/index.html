@@ -2,7 +2,9 @@
 <html>
 <head>
 
-<link rel="stylesheet" href="pink.css" />
+<title>Install Gleam — gleam.pink</title>
+
+<link rel="stylesheet" href="/pink.css" />
 
 </head>
 <body>
@@ -19,30 +21,25 @@
 	></pre>
 	<select class="version" id="version" title="version">
 		<option value="latest">latest</option>
-		<option value="rc">rc</option>
+		<!-- <option value="rc">rc</option> -->
 		<option value="nightly">nightly</option>
 	</select>
 	<button class="copyButton" id="copyButton" title="Copy">
-		<img id="copyIcon" height="32" src="copy.svg" style="display: block" />
-		<img
-			id="successIcon"
-			height="24"
-			src="check.svg"
-			style="display: none; padding: 4px"
-		/>
+		<img id="copyIcon" src="copy.svg" style="display: block" />
+		<img id="successIcon" src="copy-check.svg" style="display: none" />
 	</button>
 </div>
 
 <footer>
 	<p><a href="/install.sh">View the script source</a></p>
-	<p
-		>This script is maintained by the
-		<a href="https://github.com/gleam-community/gleam-install">Gleam community</a
+	<p class="footer-low"
+		>This site is maintained by
+		<a href="https://github.com/aslilac/gleam.pink">@aslilac</a
 	></p>
 </footer>
 
 </div>
 
-<script type="module" src="pink.js"></script>
+<script type="module" src="/pink.js"></script>
 </body>
 </html>

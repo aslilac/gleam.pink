@@ -1,6 +1,6 @@
 :root {
-	--font-sans-serif: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans",
-		source-sans-pro, sans-serif;
+	--font-sans-serif: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro,
+		sans-serif;
 }
 
 * {
@@ -87,6 +87,12 @@ a:visited {
 	background-color: #fff5;
 	border: 1px solid #0003;
 	transform: none;
+}
+
+.copyButton img {
+	width: 22px;
+	height: 22px;
+	padding: 5px;
 }
 
 footer {

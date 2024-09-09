@@ -12,7 +12,7 @@ You can install a specific version with the `--version` flag. This works for Gle
 
 ```sh
 curl -fsSL https://gleam.pink/install.sh | sh -s -- --version nightly  # bleeding edge 😎
-curl -fsSL https://gleam.pink/install.sh | sh -s -- --version 1.0.0    # one day :^)
+curl -fsSL https://gleam.pink/install.sh | sh -s -- --version 2.0.0    # maybe one day :^)
 ```
 
 ### `--prefix`

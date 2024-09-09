@@ -1,0 +1,14 @@
+name = "gleam_pink"
+version = "1.0.0"
+licences = ["MIT"]
+repository = { type = "github", user = "aslilac", repo = "gleam.pink" }
+
+[dependencies]
+gleam_erlang = ">= 0.26.0 and < 1.0.0"
+gleam_http = ">= 3.6.0 and < 4.0.0"
+gleam_stdlib = ">= 0.40.0 and < 2.0.0"
+mist = ">= 2.0.0 and < 3.0.0"
+wisp = ">= 1.1.0 and < 2.0.0"
+
+[dev-dependencies]
+gleeunit = "~> 1.2"
